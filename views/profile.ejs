@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="stylesheet" href="../stylesheets/style.css"> 
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#">Rick Sanchez CV</a>
+            
+            <div class="d-flex align-items-center gap-3">
+                <div class="dropdown theme-dropdown">
+                    <button class="btn btn-outline-secondary dropdown-toggle d-flex align-items-center gap-2" 
+                            type="button" data-bs-toggle="dropdown">
+                        <i class="bi bi-palette-fill"></i>
+                        <span>Theme</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end p-3">
+                        <li>
+                            <div class="d-flex gap-3 flex-wrap">
+                                <div onclick="changeTheme('#3AAA64')" class="color-swatch" style="background: #3AAA64;" title="Green"></div>
+                                <div onclick="changeTheme('#0d6efd')" class="color-swatch" style="background: #0d6efd;" title="Blue"></div>
+                                <div onclick="changeTheme('#dc3545')" class="color-swatch" style="background: #dc3545;" title="Red"></div>
+                                <div onclick="changeTheme('#6f42c1')" class="color-swatch" style="background: #6f42c1;" title="Purple"></div>
+                                <div onclick="changeTheme('#fd7e14')" class="color-swatch" style="background: #fd7e14;" title="Orange"></div>
+                                <div onclick="changeTheme('#198754')" class="color-swatch" style="background: #198754;" title="Teal"></div>
+                                <div onclick="changeTheme('#6610f2')" class="color-swatch" style="background: #6610f2;" title="Indigo"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <button onclick="window.print()" class="btn btn-primary">
+                    <i class="bi bi-printer-fill me-2"></i>Print / Save as PDF
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="header py-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-3 text-center text-lg-start">
+                    <img src="https://images.unsplash.com/photo-1630332458166-1c3bdde17665?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NDc4OTR8&ixlib=rb-4.1.0&q=85" 
+                         alt="Rick Sanchez" 
+                         class="profile-img rounded-circle mx-auto d-block">
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center gap-3 mb-3">
+                        <h1 class="display-5 fw-bold mb-0"><%= name %></h1> 
+                        <span class="badge badge-primary fs-6 px-3 py-2">C-137</span>
+                    </div>
+                    <h5 class="text-muted mb-2">Associate Professor • Dept. of Alien Agriculture</h5>
+                    <h5 class="text-muted">Jaarvlar-3 University</h5>
+                    <p class="lead text-muted mb-1">PhD in Molecular Shwanky Physics</p>
+                    <p class="mb-0">
+                        <i class="bi bi-geo-alt-fill text-muted"></i> 
+                        123 Cuba str, Tampa, FL, Earth-137
+                    </p>
+                </div>
+                
+                <div class="col-lg-3 text-lg-end">
+                    <div class="mb-3">
+                        <a href="tel:+0001732226402" class="text-decoration-none text-dark">
+                            <i class="bi bi-telephone-fill text-primary me-2"></i>
+                            <strong>+000 173 222 6402</strong>
+                        </a>
+                    </div>
+                    
+                    <a href="mailto:arick@yahoo.com" class="btn btn-primary btn-lg w-100 mb-3">
+                        <i class="bi bi-envelope-fill me-2"></i>Send Email
+                    </a>
+                    
+                    <div class="d-flex justify-content-lg-end gap-2">
+                        <a href="#" class="social-btn btn btn-outline-secondary"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-btn btn btn-outline-secondary"><i class="bi bi-google"></i></a>
+                        <a href="#" class="social-btn btn btn-outline-secondary"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-btn btn btn-outline-secondary"><i class="bi bi-paypal"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container py-5">
+        <div class="row g-5">
+            <!-- Biography -->
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="section-title">
+                            <i class="bi bi-person-fill fs-3"></i> Biography
+                        </h4>
+                        <p class="lead text-muted">
+                            Rick Sanchez C-137 is the father of Beth Smith, and the grandfather of Morty and Summer Smith. 
+                            Aged 60 years old, he is said to have been away from the family for around fourteen years prior to 
+                            the events of the show's first episode. He frequently travels on adventures through space and 
+                            other planets and dimensions with his grandson Morty.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Work Experience -->
+            <div class="col-lg-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="section-title">
+                            <i class="bi bi-briefcase-fill fs-3"></i> Work Experience
+                        </h4>
+                        
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <h5 class="mb-1">Associate Professor</h5>
+                                    <p class="text-primary fw-medium">Jaarvlar-3 University • Dept. of Alien Agriculture</p>
+                                </div>
+                                <span class="text-muted text-end">2018 – Present</span>
+                            </div>
+                            <p class="text-muted">Leading research in interdimensional crop genetics and portal-based farming technologies.</p>
+                            <div class="accent-line"></div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <h5 class="mb-1">Senior Scientist</h5>
+                                    <p class="text-primary fw-medium">Galactic Federation Research Lab</p>
+                                </div>
+                                <span class="text-muted text-end">2012 – 2018</span>
+                            </div>
+                            <p class="text-muted">Developed advanced portal gun technology and molecular stabilization devices.</p>
+                            <div class="accent-line"></div>
+                        </div>
+                        
+                        <div>
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <h5 class="mb-1">Freelance Dimension Hopper</h5>
+                                    <p class="text-primary fw-medium">Various Dimensions</p>
+                                </div>
+                                <span class="text-muted text-end">2000 – 2012</span>
+                            </div>
+                            <p class="text-muted">Independent contractor specializing in high-risk scientific expeditions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Education -->
+            <div class="col-lg-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="section-title">
+                            <i class="bi bi-mortarboard-fill fs-3"></i> Education
+                        </h4>
+                        
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h5 class="mb-1">PhD in Molecular Shwanky Physics</h5>
+                                    <p class="text-primary">Jaarvlar-3 University</p>
+                                </div>
+                                <span class="text-muted">2004</span>
+                            </div>
+                            <p class="text-muted">Thesis: "The Effects of Portal Fluid on Subatomic Party Particles"</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h5 class="mb-1">MSc Advanced Alien Biology</h5>
+                                    <p class="text-primary">Dimension C-137 Institute of Technology</p>
+                                </div>
+                                <span class="text-muted">2002</span>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h5 class="mb-1">BSc in Everything Science</h5>
+                                    <p class="text-primary">Earth Community College</p>
+                                </div>
+                                <span class="text-muted">1998</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Interests -->
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="section-title">
+                            <i class="bi bi-rocket-takeoff-fill fs-3"></i> Interests
+                        </h4>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex align-items-center gap-3">Cloud &amp; Parallel Computing</li>
+                            <li class="list-group-item d-flex align-items-center gap-3">Big Data Analysis and Management</li>
+                            <li class="list-group-item d-flex align-items-center gap-3">High-performance and Low-Power Real-Time Systems</li>
+                            <li class="list-group-item d-flex align-items-center gap-3">Mobile Embedded Systems and Network Security</li>
+                            <li class="list-group-item d-flex align-items-center gap-3">Interdimensional Portal Engineering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-5 pt-4 border-top">
+          <small class="text-muted">Modern Bootstrap 5  • By <A href=https://nodws.com>Nodws</a></small>
+        </div>
+    </div>
+    
+    <script>
+        function changeTheme(color) {
+            document.documentElement.style.setProperty('--primary-color', color);
+            
+            // Force refresh of dynamic styles
+            const styleSheets = document.styleSheets;
+            for (let i = 0; i < styleSheets.length; i++) {
+                if (styleSheets[i].href && styleSheets[i].href.includes('bootstrap')) {
+                    continue; // Skip Bootstrap CSS
+                }
+            }
+            
+            // Re-trigger CSS updates
+            document.querySelectorAll('.card, .btn-primary, .badge-primary, .text-primary, .social-btn').forEach(el => {
+                el.style.transition = 'none';
+                void el.offsetWidth;
+                el.style.transition = '';
+            });
+        }
+        
+        // Print shortcut
+        document.addEventListener('keydown', (e) => {
+            if (e.ctrlKey && e.key === 'p') {
+                e.preventDefault();
+                window.print();
+            }
+        });
+        
+        // Demo interaction
+        document.querySelector('.profile-img').addEventListener('click', () => {
+            alert("Wubba lubba dub dub! (I'm in great pain, please help me...)");
+        });
+    </script>
+</body>
+</html>

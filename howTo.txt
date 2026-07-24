@@ -1,0 +1,9 @@
+1> download and install node
+2> insatall express
+3> insatall nodemon
+4> set up  ejs
+5> set up satic files ... html css js images etc. 
+                    
+                    (path important hai ejs mai jo likha jaega 
+                    ejs main koi or file jo ki public ke ander stylr ke ander hai use tak pahuchane ka takira hota hai phle bahar nikalo current folder se uske bad public folder main jao but set line ke karan path main /public automaticly lag jata hai to isko mat laga na to path kuch is type ka dikhega ........   /stylesheet/style.css     phle liha hua path yetha ../public/stylesheet/style.css )
+
