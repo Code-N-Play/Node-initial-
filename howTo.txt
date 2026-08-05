@@ -18,3 +18,10 @@ itna sab na krna pade is liye express generator use karo
       cd appname
       npm i 
       code . ( to open file in vs code )
+7> install mongoose 
+    npm i mongoose 
+8> how to connect database 
+    go to user.js file inside the router folder
+    require and setup 
+    const mongoose = require ("moongoose");
+    mongoose.connect = ("mongodb://localhost:27017/databaseName");
