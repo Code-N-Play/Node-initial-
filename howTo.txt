@@ -7,3 +7,14 @@
                     (path important hai ejs mai jo likha jaega 
                     ejs main koi or file jo ki public ke ander stylr ke ander hai use tak pahuchane ka takira hota hai phle bahar nikalo current folder se uske bad public folder main jao but set line ke karan path main /public automaticly lag jata hai to isko mat laga na to path kuch is type ka dikhega ........   /stylesheet/style.css     phle liha hua path yetha ../public/stylesheet/style.css )
 
+
+
+itna sab na krna pade is liye express generator use karo 
+6> install Express generator
+      npm i express-generator -g 
+      go cmd 
+      move to desktop (cd Desktop)
+      fire the command ( express appname --view=ejs )
+      cd appname
+      npm i 
+      code . ( to open file in vs code )
