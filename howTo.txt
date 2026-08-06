@@ -25,3 +25,27 @@ itna sab na krna pade is liye express generator use karo
     require and setup 
     const mongoose = require ("moongoose");
     mongoose.connect = ("mongodb://localhost:27017/databaseName");
+    
+    
+session and cookies
+
+9> install session 
+	npm i express-session
+	
+10> main script file me ye code add karo
+	var session = require("express-session")
+	app.use(session ({
+		resave: false,
+		saveUninitialized: false,
+		secret : "lolopolop" 
+	}));
+	
+11> create session === req.session.sessionname = sessionvalue;
+12> read session === req.session.sessionname
+13> delete session === req.session.destroy()
+
+
+cookies 
+
+already installed hai 
+
