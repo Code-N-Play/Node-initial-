@@ -46,6 +46,18 @@ session and cookies
 
 
 cookies 
-
 already installed hai 
+
+
+
+flash message ke bare mai  ( is use ek route pr bane kisi data ko dusre route se access krne ke liye kiya jata hai mainly in login form main)
+
+14> install connerct-flash 
+	npm i connect-flash
+	
+15> flash ko set up karo main backend file mai (app.js)
+	var flash = require("connect-flash");
+	
+	app.use(flas());
+	
 
